@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TASK-.#####",
+ "creation": "2025-04-16 16:23:28.176960",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "project",
+  "board",
+  "column_break_ymjh",
+  "column",
+  "priority",
+  "assigned_to",
+  "column_break_tuid",
+  "due_date",
+  "attachments",
+  "section_break_xwja",
+  "description",
+  "section_break_jtem",
+  "checklist",
+  "section_break_jrqi",
+  "labels"
+ ],
+ "fields": [
+  {
+   "fieldname": "labels",
+   "fieldtype": "Table",
+   "label": "Labels",
+   "options": "Task Label"
+  },
+  {
+   "fieldname": "checklist",
+   "fieldtype": "Table",
+   "label": "Checklist",
+   "options": "Task Checklist"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Attach",
+   "label": "Attachments "
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description "
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project ",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "board",
+   "fieldtype": "Link",
+   "label": "Board ",
+   "options": "Project Board",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column",
+   "fieldtype": "Link",
+   "label": "Column ",
+   "options": "Project Column",
+   "reqd": 1
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority ",
+   "options": "Low\nMedium\nHigh\nCritical"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To ",
+   "options": "User"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date ",
+   "placeholder": "Deadline for completion"
+  },
+  {
+   "fieldname": "column_break_ymjh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tuid",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xwja",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_jtem",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_jrqi",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-17 19:07:02.928302",
+ "modified_by": "Administrator",
+ "module": "Nesscale Project",
+ "name": "Project Task",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

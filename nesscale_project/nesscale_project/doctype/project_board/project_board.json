@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "BOARD-.#####",
+ "creation": "2025-04-16 16:05:53.485468",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "doard_name",
+  "project",
+  "is_active",
+  "column_break_ixwg",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "doard_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Doard Name ",
+   "placeholder": "Name of the board",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project ",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "is_active "
+  },
+  {
+   "fieldname": "column_break_ixwg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-17 19:07:21.975254",
+ "modified_by": "Administrator",
+ "module": "Nesscale Project",
+ "name": "Project Board",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
