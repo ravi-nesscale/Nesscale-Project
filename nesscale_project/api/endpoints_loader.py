@@ -9,8 +9,8 @@ def get_combined_endpoints():
     combined_endpoints = {}
     modules = [
         auth_endpoints,
+        project_endpoints,
         # masters_endpoints,
-        # auth_endpoints,
         
     ]
 

@@ -37,13 +37,7 @@ class Auth:
             api_key = user_details.get("api_key")
         return {"api_secret": api_secret, "api_key": api_key}
     
-    # def create_user(self,data:CreateUser):
-    #     doc = frappe.get_doc(doctype="User")
-    #     doc.update(data.dict())
-    #     doc.insert(ignore_permissions=True)
-    #     frappe.response["message"] = _("User Created Successfully")
-    #     return doc.username 
-    
+
     def create_user(self, data: CreateUser):
         doc = frappe.get_doc(doctype="User")
         doc.update(data.dict())

@@ -1,1 +1,1 @@
-# from carpenter_management.api.modules.client.client_endpoints import client_endpoints
+from nesscale_project.api.modules.project.project_endpoints import project_endpoints
